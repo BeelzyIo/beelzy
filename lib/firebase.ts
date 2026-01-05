@@ -1,8 +1,3 @@
-import firebase from 'firebase/app';
-import 'firebase/auth';
-import 'firebase/firestore';
-import 'firebase/storage';
-
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 
@@ -29,10 +24,7 @@ const firebaseConfig = {
   measurementId: "G-TGLZDCZL3T"
 };
 
-let app;
-if (!firebase.getApps.length) {
-    app = firebase.initializeApp(firebaseConfig);
-}
+const app = initializeApp(firebaseConfig);
 
 // Auth exports
 export const auth = getAuth(app);
