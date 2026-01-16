@@ -39,5 +39,4 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
- # ignore images folder
- /images/
+images/
