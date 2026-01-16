@@ -21,8 +21,8 @@ export default function Home() {
               <Image
                 src={src}
                 alt={`image-${idx + 1}`}
-                width={330}
-                height={200}
+                width={320}
+                height={210}
                 className="w-full h-48 object-contain"
               />
             </div>
